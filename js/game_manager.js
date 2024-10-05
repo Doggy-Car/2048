@@ -172,6 +172,7 @@ GameManager.prototype.move = function (direction) {
           self.moveTile(tile, positions.farthest);
         }
 
+
         if (!self.positionsEqual(cell, tile)) {
           moved = true; // The tile moved from its original cell!
         }
