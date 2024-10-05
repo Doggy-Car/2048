@@ -6,10 +6,10 @@ function Admin() {
       Admin.Do = prompt("What to do?");
       alert(Admin.Do);
       if (Admin.Do === "Add") {
-        Admin.Add = Num(prompt("Add what number?"));
+        Admin.Add = Number(prompt("Add what number?"));
         Admin.Grid = [];
-        Admin.Grid.X = Num(prompt("Grid X"));
-        Admin.Grid.Y = Num(prompt("Grid Y"));
+        Admin.Grid.X = Number(prompt("Grid X"));
+        Admin.Grid.Y = Number(prompt("Grid Y"));
         
         cell = { x: Admin.Grid.X, y: Admin.Grid.Y };
         tile = self.grid.cellContent(cell);
