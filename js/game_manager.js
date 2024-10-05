@@ -1,14 +1,15 @@
 function Admin() {
   if (prompt("Username") === "Cat") {
     if (prompt("Password") === "Meow Meow") {
-      alert("Logged in")
-      var Admin = []
-      Admin.Do = prompt("What to do?")
+      alert("Logged in");
+      var Admin = [];
+      Admin.Do = prompt("What to do?");
+      alert(Admin.Do);
       if (Admin.Do === "Add") {
-        Admin.Add = Num(prompt("Add what number?"))
-        Admin.Grid = []
-        Admin.Grid.X = Num(prompt("Grid X"))
-        Admin.Grid.Y = Num(prompt("Grid Y"))
+        Admin.Add = Num(prompt("Add what number?"));
+        Admin.Grid = [];
+        Admin.Grid.X = Num(prompt("Grid X"));
+        Admin.Grid.Y = Num(prompt("Grid Y"));
         
         cell = { x: Admin.Grid.X, y: Admin.Grid.Y };
         tile = self.grid.cellContent(cell);
